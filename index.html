@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/style.css" />
+  </head>
+  <body>
+    <div class="main">
+      <div id="container">
+        <h1>
+          To-Do List
+          <i class="ri-list-check-3"></i>
+        </h1>
+        <div class="row">
+          <input type="text" id="input-box" placeholder="Add Your Text" />
+          <button type="button" class="button" aria-label="Add item to list">
+            <span class="button__text">Add Item</span>
+            <span class="button__icon" onclick= "AddTask()">
+              <svg
+              class="svg-icon"
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="svg"
+              >
+                <line x1="12" y1="5" x2="12" y2="19"></line>
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+              </svg>
+            </span>
+          </button>
+        </div>
+        <ul id="list-container">
+            <li class="checked ">task</li>
+            <li>task</li>
+            <li>task</li>
+        </ul>
+      </div>
+    </div>
+    <script src="/script.js"></script>
+  </body>
+</html>
